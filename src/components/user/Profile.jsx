@@ -8,32 +8,32 @@ const Profile = () => {
     <>
       <div className="container text-center my-3">
         <h1>Welcome , {user?.name}</h1>
-        <h3>{user?.email}</h3>
-        <h1>Total Order :- {userOrder?.length}</h1>
+        <h5>{user?.email}</h5>
+        <h3>Total Order: {userOrder?.length}</h3>
       </div>
 
       <div className="container my-5">
-        <table className="table table-bordered border-primary bg-dark">
-          <thead className="bg-dark">
+        <table className="table table-bordered border-gray-600 bg-white text-black">
+          <thead className="bg-white text-black">
             <tr>
-              <th scope="col" className="bg-dark text-light text-center">
+              <th scope="col" className="bg-white text-black text-light text-center">
                 OrderItems
               </th>
 
-              <th scope="col" className="bg-dark text-light text-center">
+              <th scope="col" className="bg-white text-black text-light text-center">
                 OrderDetails & ShippingAddress
               </th>
             </tr>
           </thead>
-          <tbody className="bg-dark">
+          <tbody className="bg-white text-black">
             {userOrder && (
               <>
                 {userOrder?.map((product) => (
                   <tr key={product._id}>
-                    <td className="bg-dark text-light">
+                    <td className="bg-white text-black text-light">
                       <ShowOrderProduct items={product?.orderItems} />
                     </td>
-                    <td className="bg-dark text-light">
+                    <td className="bg-white text-black text-light">
                       <ul style={{ fontWeight: "bold" }}>
                         <li>OrderId : {product?.orderId}</li>
                         <li>PaymentId : {product?.paymentId}</li>
