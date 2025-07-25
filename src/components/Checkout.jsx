@@ -89,9 +89,9 @@ const Checkout = () => {
   return (
     <>
       <div className="container  my-3">
-        <h1 className="text-center">Order Summary</h1>
-
-        <table className="table table-bordered border-primary bg-pink-200">
+        <h1 className="text-center">Order Summary!</h1>
+        <div className="!overflow-x-scroll">
+        <table className="table table-bordered border-gray-600 ">
           <thead className="bg-white">
             <tr>
               <th scope="col" className="bg-white !text-black text-light text-center">
@@ -121,6 +121,7 @@ const Checkout = () => {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
       
       <div className="container text-center my-5">

@@ -12,7 +12,7 @@ const Profile = () => {
         <h3>Total Order: {userOrder?.length}</h3>
       </div>
 
-      <div className="container my-5">
+      <div className="container my-5 !overflow-x-scroll">
         <table className="table table-bordered border-gray-600 bg-white text-black">
           <thead className="bg-white text-black">
             <tr>
